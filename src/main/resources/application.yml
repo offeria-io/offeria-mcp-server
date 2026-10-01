@@ -12,7 +12,7 @@ spring:
         name: offeria-mcp-server
         version: 0.0.1
         type: SYNC
-        protocol: STREAMABLE
+        protocol: SSE
         instructions: >
           Offeria MCP Server provides controlled access to
           Offeria Material Knowledge Base capabilities.
@@ -20,4 +20,4 @@ spring:
 offeria:
   services:
     material:
-      base-url: ${MATERIAL_SERVICE_URL:http://localhost:8080}
+      base-url: ${MATERIAL_SERVICE_URL:http://localhost:8081}
