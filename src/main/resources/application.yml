@@ -1,0 +1,23 @@
+server:
+  port: ${SERVER_PORT:8090}
+
+spring:
+  application:
+    name: offeria-mcp-server
+
+  ai:
+    mcp:
+      server:
+        enabled: true
+        name: offeria-mcp-server
+        version: 0.0.1
+        type: SYNC
+        protocol: STREAMABLE
+        instructions: >
+          Offeria MCP Server provides controlled access to
+          Offeria Material Knowledge Base capabilities.
+
+offeria:
+  services:
+    material:
+      base-url: ${MATERIAL_SERVICE_URL:http://localhost:8080}
