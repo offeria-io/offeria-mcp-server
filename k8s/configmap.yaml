@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: offeria-mcp-server-config
+  labels:
+    app: offeria-mcp-server
+data:
+  SERVER_PORT: "8090"
+  MATERIAL_SERVICE_URL: "http://material-service:8081"
+  JAVA_OPTS: "-XX:MaxRAMPercentage=75.0"
