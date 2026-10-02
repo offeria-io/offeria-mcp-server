@@ -21,3 +21,14 @@ offeria:
   services:
     material:
       base-url: ${MATERIAL_SERVICE_URL:http://localhost:8081}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: never
